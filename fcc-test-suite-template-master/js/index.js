@@ -26,3 +26,13 @@ INSTRUCTIONS:
 
 // Once you have read the above messages, you can delete all comments. 
 "use strict";
+const numerinInput =document.getElementById(numeric-input);
+const numericInput = document.addEventListener('keypress', (event) =>{
+  const keyCode = event.keyCode || event.which;
+  const keyValue = string.fromCharCode(keyCode);
+  const regex  = /^[0-9]*$/;
+
+  if(!regex.test(keyValue)){
+    event.preventDefault();
+  }
+});
